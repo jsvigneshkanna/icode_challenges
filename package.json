@@ -1,0 +1,27 @@
+{
+  "name": "icode_challenges",
+  "version": "1.0.0",
+  "description": "Hey 👋, I am doing frontend challenges from icode website. Come let's all learn together and build something..",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss styles.css -o src/styles.css",
+    "dev": "npm run build && live-server src --port=8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsvigneshkanna/icode_challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsvigneshkanna/icode_challenges/issues"
+  },
+  "homepage": "https://github.com/jsvigneshkanna/icode_challenges#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.2.4"
+  }
+}
