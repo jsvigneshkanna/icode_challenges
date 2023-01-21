@@ -1,50 +1,10 @@
 export const showcaseData = [
   {
-    title: "profile tooltip",
+    title: "Sign in form",
     github: "/",
-    pageHref: "/profile_tooltip",
+    pageHref: "/solutions/signin_form",
     description:
-      "Interactive profile photo on click/ hove opens corresponding tooltip with details of the user on side of the photo 📸",
-    posterImage: "https://www.icodethis.com/images/projects/profile_popup.png",
-  },
-  {
-    title: "profile tooltip",
-    github: "/",
-    pageHref: "/profile_tooltip",
-    description:
-      "Interactive profile photo on click/ hove opens corresponding tooltip with details of the user on side of the photo 📸",
-    posterImage: "https://www.icodethis.com/images/projects/profile_popup.png",
-  },
-  {
-    title: "profile tooltip",
-    github: "/",
-    pageHref: "/profile_tooltip",
-    description:
-      "Interactive profile photo on click/ hove opens corresponding tooltip with details of the user on side of the photo 📸",
-    posterImage: "https://www.icodethis.com/images/projects/profile_popup.png",
-  },
-  {
-    title: "profile tooltip",
-    github: "/",
-    pageHref: "/profile_tooltip",
-    description:
-      "Interactive profile photo on click/ hove opens corresponding tooltip with details of the user on side of the photo 📸",
-    posterImage: "https://www.icodethis.com/images/projects/profile_popup.png",
-  },
-  {
-    title: "profile tooltip",
-    github: "/",
-    pageHref: "/profile_tooltip",
-    description:
-      "Interactive profile photo on click/ hove opens corresponding tooltip with details of the user on side of the photo 📸",
-    posterImage: "https://www.icodethis.com/images/projects/profile_popup.png",
-  },
-  {
-    title: "profile tooltip",
-    github: "/",
-    pageHref: "/profile_tooltip",
-    description:
-      "Interactive profile photo on click/ hove opens corresponding tooltip with details of the user on side of the photo 📸",
-    posterImage: "https://www.icodethis.com/images/projects/profile_popup.png",
+      "Interactive popup which describes the sign in/ login feature. We have username, password text input and buttons to signin",
+    posterImage: "https://www.icodethis.com/images/projects/sign_in_form.png",
   },
 ];
