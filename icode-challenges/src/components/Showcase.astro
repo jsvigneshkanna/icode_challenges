@@ -1,0 +1,15 @@
+---
+import { showcaseData } from "../data/showcase";
+---
+
+<div class="flex justify-evenly items-center flex-wrap mt-10">
+  {
+    showcaseData.map((data) => {
+      return (
+        <div>
+          <img src={data.posterImage} alt="" class="h-40" />
+        </div>
+      );
+    })
+  }
+</div>
