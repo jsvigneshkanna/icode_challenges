@@ -1,0 +1,44 @@
+---
+import { Icon } from "astro-icon";
+const date = new Date();
+const currentYear = date.getFullYear();
+---
+
+<div class="py-4 w-full px-4 md:px-60 2xl:px-80 bg-purple-900 text-white">
+  <!-- Navlinks -->
+  <div
+    class="flex flex-row gap-32 uppercase font-semibold justify-center items-center pb-3 border-b-2 border-slate-600"
+  >
+    <a href="/" class="hover:underline underline-offset-4 decoration-blue-500 decoration-4">home</a>
+    <a href="/aboutme" class="hover:underline underline-offset-4 decoration-blue-500 decoration-4">about me</a>
+    <a
+      href="https://github.com/jsvigneshkanna/icode_challenges"
+      target="_blank"
+      rel="noreferrer"
+      class="hover:underline underline-offset-4 decoration-blue-500 decoration-4">github</a
+    >
+  </div>
+
+  <!-- social links -->
+  <div class="flex flex-row justify-center gap-32 items-center py-4">
+    <a href="https://www.linkedin.com/in/jsvigneshkanna/" target="_blank" rel="noopener noreferrer"
+      ><Icon name="mdi:linkedin" class="w-8 h-8 hover:scale-110" /></a
+    >
+    <a href="https://www.youtube.com/channel/UC-8cPQe6kqQ-oQF7kA9XEgA" target="_blank" rel="noopener noreferrer"
+      ><Icon name="mdi:youtube" class="w-8 h-8 hover:scale-110" /></a
+    >
+    <a href="https://github.com/jsvigneshkanna" target="_blank" rel="noopener noreferrer"
+      ><Icon name="mdi:github" class="w-8 h-8 hover:scale-110" /></a
+    >
+    <a href="https://www.twitch.tv/jsvigneshkanna" target="_blank" rel="noopener noreferrer"
+      ><Icon name="mdi:twitch" class="w-8 h-8 hover:scale-110" /></a
+    >
+    <a href="https://discord.gg/EBhuUECQBQ" target="_blank" rel="noopener noreferrer"
+      ><Icon name="mdi:discord" class="w-8 h-8 hover:scale-110" /></a
+    >
+  </div>
+  <!-- copyright -->
+  <p class="text-center text-sm text-orange-500 tracking-wider py-4">
+    &copy; {currentYear} J S Vignesh Kanna. All Rights reserved
+  </p>
+</div>
