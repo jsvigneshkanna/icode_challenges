@@ -1,21 +1,23 @@
 ---
-import Navbar from '../components/Navbar.astro';
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 interface Props {
-    title: string
+  title: string;
 }
-const TITLE = Astro.props.title
+const TITLE = Astro.props.title;
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>VK: {TITLE}</title>
-	</head>
-	<body class=" bg-purple-600 min-h-screen text-white">
-        <Navbar />
-		<slot />
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>VK: {TITLE}</title>
+  </head>
+  <body class="bg-purple-600 min-h-screen text-white">
+    <Navbar />
+    <slot />
+    <Footer />
+  </body>
 </html>
