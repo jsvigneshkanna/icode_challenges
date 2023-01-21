@@ -2,12 +2,33 @@
 import { showcaseData } from "../data/showcase";
 ---
 
-<div class="flex justify-evenly items-center flex-wrap mt-10">
+<div class="flex justify-evenly items-center flex-wrap mt-10 px-4 md:px-60 2xl:px-80 gap-20 2xl:gap-32 mb-32">
   {
     showcaseData.map((data) => {
       return (
-        <div>
-          <img src={data.posterImage} alt="" class="h-40" />
+        <div class="rounded-lg overflow-hidden shadow-md shadow-purple-900 w-80 ">
+          <img src={data.posterImage} alt="poster image" class="w-80 h-60 object-cover" />
+          <div class="px-2 text-center">
+            <h2 class="mt-4 font-bold text-xl tracking-wide">{data.title}</h2>
+            <p class="mt-4 font-semibold text-slate-300">{data.description}</p>
+
+            <div class="flex flex-row justify-evenly gap-8 items-center px-3 py-6">
+              <a
+                href={data.pageHref}
+                class="bg-purple-800 text-white py-1 px-3 rounded-lg shadow-md shadow-purple-900 font-semibold hover:scale-105"
+              >
+                Demo
+              </a>
+              <a
+                href={data.github}
+                target="_blank"
+                rel="noreferrer"
+                class="bg-purple-800 text-white py-1 px-3 rounded-lg shadow-md shadow-purple-900 font-semibold hover:scale-105"
+              >
+                Code
+              </a>
+            </div>
+          </div>
         </div>
       );
     })
