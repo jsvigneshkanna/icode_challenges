@@ -3,5 +3,62 @@ import BaseLayout from "../../layout/baseLayout.astro";
 ---
 
 <BaseLayout title="Facebook Login form">
-  <div class="min-h-[75vh] bg-slate-200 flex justify-center items-center"></div>
+  <div class="py-20 bg-slate-200 flex justify-center items-center">
+    <!-- Sign up form -->
+    <div
+      class="py-12 w-[420px] bg-white text-black rounded-2xl flex flex-col justify-center items-center px-20 shadow-md shadow-slate-400"
+    >
+      <!-- Join the community -->
+      <div class="text-2xl font-bold text-center tracking-wide">
+        <p>Join the</p>
+        <p>community</p>
+      </div>
+      <p class="text-center font-medium text-gray-600 mt-4">
+        Take your art to the next level. Get it seeen by millions of people.
+      </p>
+
+      <!-- Join button -->
+      <button disabled="disabled" class="bg-blue-500 text-white font-medium rounded-md py-2 mt-4 w-full"
+        >Join the Facebook</button
+      >
+
+      <p class="mt-4">Or</p>
+
+      <!-- sign up form -->
+      <div class="mt-4 w-full">
+        <!-- name input -->
+        <div class="flex flex-row gap-3">
+          <input
+            type="text"
+            placeholder="First name"
+            class="w-1/2 border-[2px] border-slate-300 rounded-md pl-2 py-2 outline-none"
+          />
+          <input
+            type="text"
+            placeholder="Last name"
+            class="w-1/2 border-[2px] border-slate-300 rounded-md pl-2 py-2 outline-none"
+          />
+        </div>
+        <input
+          type="email"
+          placeholder="Email"
+          class="w-full border-[2px] border-slate-300 rounded-md pl-2 py-2 mt-4 outline-none"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          class="w-full border-[2px] border-slate-300 rounded-md pl-2 py-2 mt-4 outline-none"
+        />
+      </div>
+      <!-- Create new account button -->
+      <button disabled="disabled" class="bg-slate-800 text-white w-full rounded-md mt-4 py-2 font-medium"
+        >Create New Account</button
+      >
+
+      <!-- Terms and conditions -->
+      <p class="px-8 text-xs font-medium mt-8 text-center text-slate-500">
+        By joining you agree to our Terms of Service and Privacy Policy
+      </p>
+    </div>
+  </div>
 </BaseLayout>
