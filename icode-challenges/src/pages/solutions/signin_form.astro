@@ -3,5 +3,56 @@ import BaseLayout from "../../layout/baseLayout.astro";
 ---
 
 <BaseLayout title="Home">
-  <div class="min-h-[75vh]"></div>
+  <div class="min-h-[75vh] bg-slate-200 flex justify-center items-center">
+    <div class="relative">
+      <!-- Outer purple container -->
+      <div class="h-[520px] w-[320px] bg-purple-800 rounded-2xl"></div>
+
+      <!-- sign in form -->
+      <div
+        class="h-[460px] w-[360px] bg-white text-black rounded-2xl absolute right-20 top-8 shadow-md shadow-purple-900 px-12 flex flex-col justify-center items-start"
+      >
+        <p class="font-bold text-2xl">Sign in</p>
+
+        <!-- username input -->
+        <div class="mt-6 w-full">
+          <label for="username" class="text-xs font-bold">Username or email</label>
+          <input
+            type="text"
+            id="username"
+            class="border-[1px] border-slate-500 w-full rounded-sm text-lg outline-none p-1"
+          />
+        </div>
+
+        <!-- password input -->
+        <div class="mt-6 w-full">
+          <label for="password" class="text-xs font-bold">Password</label>
+          <input
+            type="password"
+            id="username"
+            class="border-[1px] border-slate-500 w-full rounded-sm text-lg outline-none p-1"
+          />
+        </div>
+
+        <!-- sign button and forgot password -->
+        <div class="mt-5 flex flex-row justify-between items-center gap-5 w-full">
+          <button
+            type="submit"
+            class="bg-purple-700 text-white text-md font-semibold px-6 py-2 rounded-3xl hover:scale-110 hover:bg-blue-800"
+            >Sign in</button
+          >
+
+          <a href="#" class="text-black font-medium text-sm hover:underline underline-offset-4 decoration-blue-600"
+            >Forgot your password?</a
+          >
+        </div>
+
+        <!-- dont have account section -->
+        <div class="mt-10 flex flex-col justify-center items-center w-full">
+          <p class="font-semibold text-sm">Don't have an account?</p>
+          <a href="#" class="underline underline-offset-4 decoration-blue-700 font-semibold text-sm">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </BaseLayout>
