@@ -16,4 +16,12 @@ export const showcaseData = [
     description: "Facebook Community Joining form which asks the users to give login credentials",
     posterImage: "https://www.icodethis.com/images/projects/sign_up_form.png",
   },
+  {
+    title: "Followers panel",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/followers_panel.astro",
+    pageHref: "/solutions/followers_panel",
+    description: "Panel to display the followers name and ability to follow/ unfollow them",
+    posterImage: "https://www.icodethis.com/images/projects/followers.png",
+  },
 ];
