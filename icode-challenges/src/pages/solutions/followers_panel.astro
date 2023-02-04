@@ -2,6 +2,110 @@
 import BaseLayout from "../../layout/baseLayout.astro";
 ---
 
-<BaseLayout title="Sigin Form">
-  <div class="min-h-[75vh] bg-slate-200 flex justify-center items-center">afa</div>
+<BaseLayout title="Followers Panel">
+  <div class="min-h-[75vh] bg-blue-500 flex justify-center items-center">
+    <!-- followers panel -->
+    <div class="w-[320px] min-h-[240px]">
+      <!-- banner -->
+      <div class="px-6 py-4 relative bg-gradient-to-tr from-blue-800 to-blue-500">
+        <h1 class="text-center font-medium text-xl text-white/90">Find Friends</h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width={2}
+          stroke="currentColor"
+          class="w-6 h-6 absolute left-6 top-4"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+        </svg>
+
+        <!-- serch input -->
+        <input
+          type="text"
+          class="w-full bg-blue-200/20 text-white text-sm rounded-3xl px-3 py-2 outline-none placeholder-white/60 mt-10"
+          placeholder="Enter a friend's name"
+        />
+      </div>
+
+      <!-- followers list -->
+      <div class="bg-white text-blue-600 p-5 flex flex-col justify-center items-center gap-7">
+        <div class="flex flex-row justify-between items-center w-full">
+          <div class="flex flex-row justify-center items-center gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt="profile photo"
+              class="rounded-full w-12 h-12 outline outline-blue-300/75"
+            />
+            <p class="text-sm font-bold">Jason Graham</p>
+          </div>
+          <a
+            href="#"
+            class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-3xl text-center shadow-md shadow-blue-200 hover:bg-blue-700 text-sm"
+            >Follow</a
+          >
+        </div>
+        <div class="flex flex-row justify-between items-center w-full">
+          <div class="flex flex-row justify-center items-center gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
+              alt="profile photo"
+              class="rounded-full w-12 h-12 outline outline-blue-300/75"
+            />
+            <p class="text-sm font-bold">Jason Graham</p>
+          </div>
+          <a
+            href="#"
+            class="text-blue-600 bg-white outline outline-blue-600 outline-1 font-semibold py-2 px-4 rounded-3xl text-center shadow-md shadow-blue-200 hover:bg-blue-200 text-sm"
+            >Unfollow</a
+          >
+        </div>
+        <div class="flex flex-row justify-between items-center w-full">
+          <div class="flex flex-row justify-center items-center gap-2">
+            <img
+              src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt="profile photo"
+              class="rounded-full w-12 h-12 outline outline-blue-300/75"
+            />
+            <p class="text-sm font-bold">Jason Graham</p>
+          </div>
+          <a
+            href="#"
+            class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-3xl text-center shadow-md shadow-blue-200 hover:bg-blue-700 text-sm"
+            >Follow</a
+          >
+        </div>
+        <div class="flex flex-row justify-between items-center w-full">
+          <div class="flex flex-row justify-center items-center gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80"
+              alt="profile photo"
+              class="rounded-full w-12 h-12 outline outline-blue-300/75"
+            />
+            <p class="text-sm font-bold">Jason Graham</p>
+          </div>
+          <a
+            href="#"
+            class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-3xl text-center shadow-md shadow-blue-200 hover:bg-blue-700 text-sm"
+            >Follow</a
+          >
+        </div>
+        <div class="flex flex-row justify-between items-center w-full">
+          <div class="flex flex-row justify-center items-center gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
+              alt="profile photo"
+              class="rounded-full w-12 h-12 outline outline-blue-300/75"
+            />
+            <p class="text-sm font-bold">Jason Graham</p>
+          </div>
+          <a
+            href="#"
+            class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-3xl text-center shadow-md shadow-blue-200 hover:bg-blue-700 text-sm"
+            >Follow</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 </BaseLayout>
