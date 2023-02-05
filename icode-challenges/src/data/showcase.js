@@ -24,4 +24,12 @@ export const showcaseData = [
     description: "Panel to display the followers name and ability to follow/ unfollow them",
     posterImage: "https://www.icodethis.com/images/projects/followers.png",
   },
+  {
+    title: "Mega Menu",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/mega_menu.astro",
+    pageHref: "/solutions/mega_menu",
+    description: "Panel to display the menu items from different category",
+    posterImage: "https://www.icodethis.com/images/projects/mega_menu.png",
+  },
 ];
