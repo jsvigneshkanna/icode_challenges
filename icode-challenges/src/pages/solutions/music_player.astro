@@ -2,4 +2,170 @@
 import BaseLayout from "../../layout/baseLayout.astro";
 ---
 
-<BaseLayout title="Mega menu"><div>faf</div></BaseLayout>
+<BaseLayout title="Mega menu">
+  <div class="bg-gradient-to-bl from-orange-500 to-emerald-300 min-h-[70vh] py-20 justify-center items-center flex">
+    <div class="bg-white w-[320px] md:w-[400px] rounded-md shadow-md shadow-orange-900/75 p-8 relative">
+      <!-- Hamburger menu -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width={1.8}
+        stroke="gray"
+        class="w-6 h-6 absolute top-8 left-8 hover:scale-105 cursor-pointer"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+      </svg>
+
+      <!-- plus icons -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width={1.5}
+        stroke="gray"
+        class="w-6 h-6 absolute top-8 right-8 hover:scale-105 cursor-pointer"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"
+        ></path>
+      </svg>
+
+      <div class="text-slate-600 mt-2 text-center">
+        <p class="uppercase tracking-wider text-sm">playing now</p>
+        <h2 class="text-lg capitalize font-bold tracking-wide">Someone Lived This</h2>
+        <p class="text-sm font-semibold">- Hands Zimmer -</p>
+      </div>
+
+      <div class="w-full flex justify-center items-center my-7">
+        <img
+          src="https://image.tmdb.org/t/p/original/21yDfC3dv2pXeGnqx4KpAWlUua2.jpg"
+          alt="music poster"
+          class="w-[200px] h-[200px] object-fill shadow-lg shadow-slate-500/80 hover:scale-105"
+        />
+      </div>
+
+      <!-- music progress bar -->
+      <div class="relative w-full">
+        <div class="absolute top-0 left-0 z-0 bg-emerald-200/70 h-[5px] w-full rounded-full"></div>
+        <div
+          class="absolute top-0 left-0 z-10 bg-emerald-500 h-[5px] w-[70%] rounded-full hover:bg-emerald-700 hover:h-[6px] cursor-pointer"
+        >
+        </div>
+        <div class="flex flex-row justify-between items-center text-emerald-700 pt-2 text-sm md:text-base">
+          <p>3:47</p>
+          <p>5:35</p>
+        </div>
+      </div>
+
+      <!-- music controller -->
+      <div class="flex flex-row justify-evenly items-center text-slate-400 pt-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width={1.2}
+          stroke="currentColor"
+          class="w-8 h-8 hover:scale-105 cursor-pointer"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"></path>
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width={1.2}
+          stroke="currentColor"
+          class="w-8 h-8 hover:scale-105 cursor-pointer"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width={0.8}
+          stroke="currentColor"
+          class="w-16 h-16 hover:scale-105 cursor-pointer hover:text-green-800"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z"
+          ></path>
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width={1.2}
+          stroke="currentColor"
+          class="w-8 h-8 hover:scale-105 cursor-pointer"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width={1.2}
+          stroke="currentColor"
+          class="w-8 h-8 hover:scale-105 cursor-pointer"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- Music list -->
+      <div class="flex flex-col w-full justify-center items-stretch text-slate-500 font-medium text-lg my-6 gap-7">
+        <div
+          class="flex flex-row justify-between items-center cursor-pointer hover:bg-emerald-200/40 hover:p-2 rounded-md"
+        >
+          <p class="">Sapper's Tree</p>
+          <p>3:37</p>
+        </div>
+
+        <div
+          class="flex flex-row justify-between items-center font-semibold text-xl text-slate-700 cursor-pointer hover:bg-emerald-200/40 hover:p-2 rounded-md"
+        >
+          <div class="flex flex-row justify-center items-center">
+            <p class="font-black text-emerald-600">-</p>
+            <p class="">Someone Lived This</p>
+          </div>
+          <p>5:35</p>
+        </div>
+
+        <div
+          class="flex flex-row justify-between items-center cursor-pointer hover:bg-emerald-200/40 hover:p-2 rounded-md"
+        >
+          <p class="">Summer Wind</p>
+          <p>2:54</p>
+        </div>
+
+        <div
+          class="flex flex-row justify-between items-center cursor-pointer hover:bg-emerald-200/40 hover:p-2 rounded-md"
+        >
+          <p class="">Orphangee</p>
+          <p>1:13</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
