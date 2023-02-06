@@ -17,7 +17,9 @@ const TITLE = Astro.props.title;
   </head>
   <body class="bg-purple-600 min-h-screen text-white">
     <Navbar />
-    <slot />
+    <div class="min-h-[70vh]">
+      <slot />
+    </div>
     <Footer />
   </body>
 </html>
