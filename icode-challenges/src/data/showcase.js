@@ -32,4 +32,12 @@ export const showcaseData = [
     description: "Panel to display the menu items from different category",
     posterImage: "https://www.icodethis.com/images/projects/mega_menu.png",
   },
+  {
+    title: "Music Player",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/music_player.astro",
+    pageHref: "/solutions/music_player",
+    description: "card that display the music details and its likely songs lists",
+    posterImage: "https://www.icodethis.com/images/projects/music_player.jpg",
+  },
 ];
