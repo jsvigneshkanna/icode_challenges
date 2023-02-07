@@ -2,4 +2,53 @@
 import BaseLayout from "../../layout/baseLayout.astro";
 ---
 
-<BaseLayout title="Mega menu"><div>faf</div></BaseLayout>
+<BaseLayout title="Mega menu">
+  <div class="min-h-screen relative flex justify-center items-center py-40">
+    <!-- bg color -->
+    <div class="h-[60%] bg-slate-800 absolute top-0 z-0 w-full"></div>
+    <div class="h-[40%] bg-slate-200 absolute bottom-0 z-0 w-full"></div>
+
+    <!-- news letter panel -->
+    <div class="w-[90%] md:w-[75%] z-10">
+      <div class="flex flex-col md:flex-row justify-around items-center text-white px-16 gap-6 md:gap-0">
+        <div class="text-center hover:scale-110 cursor-pointer">
+          <h2 class="font-bold text-2xl">1000+</h2>
+          <p class="text-slate-200">UI Components</p>
+        </div>
+        <div class="text-center hover:scale-110 cursor-pointer">
+          <h2 class="font-bold text-2xl">5</h2>
+          <p class="text-slate-200">Software type files</p>
+        </div>
+        <div class="text-center hover:scale-110 cursor-pointer">
+          <h2 class="font-bold text-2xl">5</h2>
+          <p class="text-slate-200">Weekly uploads</p>
+        </div>
+      </div>
+      <div
+        class="bg-gradient-to-tr from-rose-400 to-pink-600 mt-8 md:mt-20 rounded-lg shadow-lg shadow-slate-900/30 justify-center items-center flex py-12 px-4 md:px-0"
+      >
+        <div class="flex flex-col justify-center items-center w-full">
+          <h1 class="font-bold text-lg text-white md:text-2xl tracking-wide">Join our newsletter</h1>
+          <h3 class="text-slate-200 text-sm mt-1 tracking-wider text-center">
+            Weekly FREE UI resources straight to your inbox
+          </h3>
+          <div class="relative w-[80%] md:w-[50%] min-h-14 rounded-lg">
+            <input
+              type="text"
+              id="subscribe-input"
+              placeholder="Your email"
+              class="w-full py-2 text-lg px-4 bg-transparent outline outline-1 rounded-lg mt-10 outline-slate-200 relative placeholder:pl-1 placeholder:text-slate-100 placeholder:text-base"
+            />
+            <label
+              for="subscribe-input"
+              class="block mt-4 md:mt-0 md:absolute right-0 top-10 bg-slate-100 shadow-lg shadow-pink-900/70 text-black flex justify-center md:rounded-tr-lg md:rounded-br-lg rounded-lg items-center h-11 px-10 hover:bg-rose-400 hover:text-white font-semibold cursor-pointer"
+              >Sign Up</label
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="absolute bottom-6 left-6 text-black font-semibold">Made by JS Vignesh Kanna</p>
+  </div>
+</BaseLayout>
