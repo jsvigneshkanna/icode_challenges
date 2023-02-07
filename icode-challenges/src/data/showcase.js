@@ -40,4 +40,12 @@ export const showcaseData = [
     description: "card that display the music details and its likely songs lists",
     posterImage: "https://www.icodethis.com/images/projects/music_player.jpg",
   },
+  {
+    title: "News letter",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/newsletter.astro",
+    pageHref: "/solutions/newsletter",
+    description: "Panel to display the newsletter and subscription section",
+    posterImage: "https://www.icodethis.com/images/projects/newsletter.png",
+  },
 ];
