@@ -3,5 +3,38 @@ import BaseLayout from "../../layout/baseLayout.astro";
 ---
 
 <BaseLayout title="searchbar">
-  <div class="min-h-screen relative flex justify-center items-center py-40">fafaf</div>
+  <div
+    class="min-h-screen relative flex-col flex justify-center items-start py-40 bg-gradient-to-br from-stone-600 to-slate-800"
+  >
+    <!-- search input -->
+    <div class="w-full flex flex-row justify-start md:justify-center items-center relative px-4 md:px-0">
+      <input
+        type="text"
+        placeholder="Enter your search here"
+        class="min-w-[75%] md:min-w-[50%] rounded-md text-base md:text-lg font-medium py-3 px-5 bg-slate-500/90 placeholder:text-slate-400 text-slate-300 placeholder:font-semibold outline-none"
+      />
+      <div class="border-[5px] border-slate-300 rounded-full relative">
+        <div
+          class="border-[5px] border-slate-800 outline outline-[5px] hover:outline-[8px] cursor-pointer outline-slate-500 rounded-full absolute -top-12 -left-3 bg-slate-800 font-semibold text-2xl"
+        >
+          <div class="border-[5px] border-pink-500 w-20 h-20 rounded-full flex justify-center items-center text-white">
+            GO
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- filter dropdown -->
+    <div
+      class="flex flex-row gap-3 justify-start md:justify-center mt-4 items-center min-w-[60%] md:min-w-[50%] pl-10 md:pl-32"
+    >
+      <select class="text-pink-500 font-medium text-lg bg-transparent capitalize outline-none">
+        <option value="volvo" class="text-pink-500 font-medium text-lg bg-transparent">Filters</option>
+        <option value="volvo" class="text-pink-500 font-medium text-lg bg-transparent">video</option>
+        <option value="saab" class="text-pink-500 font-medium text-lg bg-transparent">images</option>
+        <option value="opel" class="text-pink-500 font-medium text-lg bg-transparent">news</option>
+        <option value="audi" class="text-pink-500 font-medium text-lg bg-transparent">music</option>
+      </select>
+    </div>
+  </div>
 </BaseLayout>
