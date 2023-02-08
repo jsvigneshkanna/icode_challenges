@@ -48,4 +48,12 @@ export const showcaseData = [
     description: "Panel to display the newsletter and subscription section",
     posterImage: "https://www.icodethis.com/images/projects/newsletter.png",
   },
+  {
+    title: "SearchBar",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/searchbar.astro",
+    pageHref: "/solutions/searchbar",
+    description: "Component to get input from user for searching and filter dropdown option",
+    posterImage: "https://www.icodethis.com/images/projects/search_bar.jpg",
+  },
 ];
