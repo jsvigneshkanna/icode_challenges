@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../../layout/baseLayout.astro";
+---
+
+<BaseLayout title="songcard">
+  <div
+    class="min-h-screen flex-col flex justify-center items-center py-20 bg-gradient-to-br from-pink-200 to-blue-200 text-black"
+  >
+    <!-- music panel -->
+    <div
+      class="px-2 md:px-6 bg-white relative flex flex-col md:flex-row justify-start items-center py-14 rounded-lg shadow-lg shadow-emerald-900/40 gap-8 md:gap-20"
+    >
+      <div class="absolute -top-10 left-[25%] md:top-6 md:left-6">
+        <img
+          src="https://th.bing.com/th/id/OIP.qKBygKKenOhJRRdxK-MVOgHaEM?w=323&h=183&c=7&r=0&o=5&pid=1.7"
+          alt="anirudh"
+          class="object-cover w-44 h-44 rounded-lg shadow-lg shadow-sky-900/70 hover:scale-110"
+        />
+      </div>
+
+      <!-- music details -->
+      <div class="text-center md:text-left pt-28 md:pt-0 md:pl-52 mx-5 md:mx-0">
+        <h1 class="font-semibold text-base md:text-lg tracking-wide">Anirudh Ravichandar</h1>
+        <p class="text-sm tracking-wide text-slate-700">The weight is Gone - The Purgatory Sessions</p>
+      </div>
+
+      <!-- music controller -->
+      <div class="w-14 h-14 rounded-full bg-slate-200 flex justify-center items-center">
+        <div class="rounded-full w-10 h-10 bg-white flex justify-center items-center hover:scale-110 cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(14 165 233)" class="w-6 h-6">
+            <path
+              fill-rule="evenodd"
+              d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

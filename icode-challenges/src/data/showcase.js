@@ -56,4 +56,12 @@ export const showcaseData = [
     description: "Component to get input from user for searching and filter dropdown option",
     posterImage: "https://www.icodethis.com/images/projects/search_bar.jpg",
   },
+  {
+    title: "Song Card",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/songcard.astro",
+    pageHref: "/solutions/songcard",
+    description: "Widget to display the poster of music and its details and controls",
+    posterImage: "https://www.icodethis.com/images/projects/song_card.png",
+  },
 ];
