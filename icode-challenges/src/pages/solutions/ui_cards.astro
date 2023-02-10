@@ -4,8 +4,96 @@ import BaseLayout from "../../layout/baseLayout.astro";
 
 <BaseLayout title="songcard">
   <div
-    class="min-h-screen flex-col flex justify-center items-center py-20 bg-gradient-to-br from-pink-200 to-blue-200 text-black"
+    class="min-h-screen flex-col flex justify-center items-center py-20 bg-gradient-to-tr from-pink-400 to-sky-400 shadow-lg shadow-slate-800/50 text-black"
   >
-    fafa
+    <!-- UI Panel -->
+    <div class="max-w-[90%] md:max-w-[70%] bg-slate-200 py-20 px-10 rounded-md shadow-lg shadow-slate-800/50">
+      <h1 class="text-center text-lg font-black tracking-wider text-pink-600">
+        Bootstraped Theme collection by J S Vignesh Kanna
+      </h1>
+      <div class="mt-8 flex flex-wrap justify-evenly items-center gap-20">
+        <!--  card -->
+        <div
+          class="w-[320px] md:w-[360px] rounded-md shadow-lg shadow-pink-900/60 hover:scale-105 active:scale-95 cursor-pointer hover:shadow-2xl hover:shadow-blue-600 p-2 flex flex-col justify-center items-start bg-slate-50"
+        >
+          <img
+            src="https://themesberg.s3.us-east-2.amazonaws.com/public/products/leaf/leaf-preview.jpg"
+            alt="forrest"
+            class="rounded-md shadow-lg shadow-slate-500/500"
+          />
+          <div class="flex flex-row justify-between items-center mt-4 w-full">
+            <h2 class="font-medium md:font-semibold text-base md:text-lg w-[70%]">Leaf - Non Profit Environmental</h2>
+            <h5 class="font-medium md:font-semibold text-base md:text-lg">RS. 700</h5>
+          </div>
+          <p class="mt-2 text-slate-500 text-sm">Clean Environment Bootstrap 4 Theme</p>
+        </div>
+
+        <div
+          class="w-[320px] md:w-[360px] rounded-md shadow-lg shadow-pink-900/60 hover:scale-105 active:scale-95 cursor-pointer hover:shadow-2xl hover:shadow-blue-600 p-2 flex flex-col justify-center items-start bg-slate-50"
+        >
+          <img
+            src="https://themesberg.s3.us-east-2.amazonaws.com/public/products/rocket/rocket-thumb.jpg"
+            alt="forrest"
+            class="rounded-md shadow-lg shadow-slate-500/500"
+          />
+          <div class="flex flex-row justify-between items-center mt-4 w-full">
+            <h2 class="font-medium md:font-semibold text-base md:text-lg w-[70%]">Spaces - Coworking Real Estate</h2>
+            <h5 class="font-medium md:font-semibold text-base md:text-lg">RS. 1700</h5>
+          </div>
+          <p class="mt-2 text-slate-500 text-sm">Landing & Corporate Theme</p>
+        </div>
+
+        <div
+          class="w-[320px] md:w-[360px] rounded-md shadow-lg shadow-pink-900/60 hover:scale-105 active:scale-95 cursor-pointer hover:shadow-2xl hover:shadow-blue-600 p-2 flex flex-col justify-center items-start bg-slate-50"
+        >
+          <img
+            src="https://themesberg.s3.us-east-2.amazonaws.com/public/products/spaces/spaces-thumb.jpg"
+            alt="forrest"
+            class="rounded-md shadow-lg shadow-slate-500/500"
+          />
+          <div class="flex flex-row justify-between items-center mt-4 w-full">
+            <h2 class="font-medium md:font-semibold text-base md:text-lg w-[70%]">
+              Now UI Kit Pro - Premium Bootstrap 4 Web Kit
+            </h2>
+            <h5 class="font-medium md:font-semibold text-base md:text-lg">RS. 300</h5>
+          </div>
+          <p class="mt-2 text-slate-500 text-sm">Portfolio & Blog4 Theme</p>
+        </div>
+
+        <div
+          class="w-[320px] md:w-[360px] rounded-md shadow-lg shadow-pink-900/60 hover:scale-105 active:scale-95 cursor-pointer hover:shadow-2xl hover:shadow-blue-600 p-2 flex flex-col justify-center items-start bg-slate-50"
+        >
+          <img
+            src="https://themesberg.s3.us-east-2.amazonaws.com/public/products/windows-95/windows-95-thumb.jpg"
+            alt="forrest"
+            class="rounded-md shadow-lg shadow-slate-500/500"
+          />
+          <div class="flex flex-row justify-between items-center mt-4 w-full">
+            <h2 class="font-medium md:font-semibold text-base md:text-lg w-[70%]">
+              Cartzilla - Multipurpose Ecommerce Template
+            </h2>
+            <h5 class="font-medium md:font-semibold text-base md:text-lg">Free</h5>
+          </div>
+          <p class="mt-2 text-slate-500 text-sm">E-Commerce & Retail Theme</p>
+        </div>
+
+        <div
+          class="w-[320px] md:w-[360px] rounded-md shadow-lg shadow-pink-900/60 hover:scale-105 active:scale-95 cursor-pointer hover:shadow-2xl hover:shadow-blue-600 p-2 flex flex-col justify-center items-start bg-slate-50"
+        >
+          <img
+            src="https://themes.getbootstrap.com/wp-content/uploads/2022/10/cover-inverted2-3-540x405.jpg"
+            alt="forrest"
+            class="rounded-md shadow-lg shadow-slate-500/500"
+          />
+          <div class="flex flex-row justify-between items-center mt-4 w-full">
+            <h2 class="font-medium md:font-semibold text-base md:text-lg w-[70%]">
+              Dashly - Admin & Dashboard Template (Dark/Light)
+            </h2>
+            <h5 class="font-medium md:font-semibold text-base md:text-lg">RS. 200</h5>
+          </div>
+          <p class="mt-2 text-slate-500 text-sm">Admin & Dashboard Theme</p>
+        </div>
+      </div>
+    </div>
   </div>
 </BaseLayout>
