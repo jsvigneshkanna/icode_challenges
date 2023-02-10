@@ -64,4 +64,12 @@ export const showcaseData = [
     description: "Widget to display the poster of music and its details and controls",
     posterImage: "https://www.icodethis.com/images/projects/song_card.png",
   },
+  {
+    title: "UI Cards",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/ui_cards.astro",
+    pageHref: "/solutions/ui_cards",
+    description: "UI Panel to display different cards with same layout",
+    posterImage: "https://www.icodethis.com/images/projects/UI_cards.png",
+  },
 ];
