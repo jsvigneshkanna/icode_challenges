@@ -4,8 +4,83 @@ import BaseLayout from "../../layout/baseLayout.astro";
 
 <BaseLayout title="users card">
   <div
-    class="min-h-screen flex-col flex justify-center items-center py-20 bg-gradient-to-tr from-pink-400 to-sky-400 shadow-lg shadow-slate-800/50 text-black"
+    class="min-h-screen flex-col flex justify-center items-center py-12 bg-gradient-to-br from-orange-200 to-blue-200 shadow-lg shadow-slate-800/50 text-black"
   >
-    afafa
+    <!-- panel -->
+    <div
+      class="bg-white rounded-md shadow-lg shadow-orange-800/30 flex flex-col justify-center items-center px-12 py-14 w-96 md:w-[420px]"
+    >
+      <!-- user images -->
+      <div
+        class="z-0 mx-auto relative w-42 h-42 p-32 rounded-full border-2 border-[#d4d8e7] hover:border-orange-500 duration-500 transform ease-in-out"
+      >
+        <!-- image -->
+        <div
+          class="absolute top-[-40px] left-[80px] w-24 h-24 rounded-full border-8 border-[#d4d8e7] hover:border-orange-400 hover:shadow-orange-900/50 shadow-lg hover:scale-105 duration-500 transition-all ease-out cursor-pointer"
+        >
+          <img
+            class="w-full h-full object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="absolute top-[40px] left-[-50px] w-24 h-24 rounded-full border-8 border-[#d4d8e7] hover:border-blue-400 hover:shadow-blue-900/50 shadow-lg hover:scale-105 duration-500 transition-all ease-out cursor-pointer"
+        >
+          <img
+            class="w-full h-full object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="absolute top-[40px] left-[200px] w-24 h-24 rounded-full border-8 border-[#d4d8e7] hover:border-yellow-400 hover:shadow-yellow-900/50 shadow-lg hover:scale-105 duration-500 transition-all ease-out cursor-pointer"
+        >
+          <img
+            class="w-full h-full object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="absolute top-[170px] left-[-6px] w-24 h-24 rounded-full border-8 border-[#d4d8e7] hover:border-green-400 hover:shadow-green-900/50 shadow-lg hover:scale-105 duration-500 transition-all ease-out cursor-pointer"
+        >
+          <img
+            class="w-full h-full object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="absolute top-[170px] right-[6px] w-24 h-24 rounded-full border-8 border-[#d4d8e7] hover:border-rose-400 hover:shadow-rose-900/50 shadow-lg hover:scale-105 duration-500 transition-all ease-out cursor-pointer"
+        >
+          <img
+            class="w-full h-full object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="mt-12 flex flex-col justify-center items-center gap-2 text-center">
+        <!-- product description -->
+        <h2 class="text-orange-500 font-semibold text-base md:text-lg">Looking for more inspiration?</h2>
+        <p class="text-slate-600 text-xs md:text-sm px-4 font-medium">
+          Duis aute irure dolor in reprehenderit in voluptated velit esse cillium dore eu fugiat nulla pariatur.
+        </p>
+
+        <a
+          href="https://vk-icodethis-solutions.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-8 py-3 text-center uppercase font-semibold bg-orange-500 hover:scale-95 shadow-lg shadow-orange-800/70 mt-5 rounded-3xl text-white"
+          >see featured creations</a
+        >
+      </div>
+    </div>
   </div>
 </BaseLayout>
