@@ -72,4 +72,13 @@ export const showcaseData = [
     description: "UI Panel to display different cards with same layout",
     posterImage: "https://www.icodethis.com/images/projects/UI_cards.png",
   },
+  {
+    title: "Users Card",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/users_card.astro",
+    pageHref: "/solutions/users_card",
+    description:
+      "Container which has the images of different customers and preview link to product with quick description",
+    posterImage: "https://www.icodethis.com/images/projects/users_card.png",
+  },
 ];
