@@ -21,5 +21,17 @@ const TITLE = Astro.props.title;
       <slot />
     </div>
     <Footer />
+
+    <script is:inline>
+      // JS part
+
+      // start of Individual user card JS Part
+      const showMoreBtnEle = document.getElementById("show-more-btn");
+      const showMoreSectionEle = document.getElementById("show-more-section");
+      showMoreBtnEle.addEventListener("click", () => {
+        showMoreSectionEle.classList.toggle("hidden");
+      });
+      // end of Individual user card JS Part
+    </script>
   </body>
 </html>
