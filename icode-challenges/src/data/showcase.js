@@ -81,4 +81,12 @@ export const showcaseData = [
       "Container which has the images of different customers and preview link to product with quick description",
     posterImage: "https://www.icodethis.com/images/projects/users_card.png",
   },
+  {
+    title: "individual User card",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/individual_user_card.astro",
+    pageHref: "/solutions/individual_user_card",
+    description: "Container serction having user details and popup modal for more informations",
+    posterImage: "https://www.icodethis.com/images/projects/user_card.png",
+  },
 ];
