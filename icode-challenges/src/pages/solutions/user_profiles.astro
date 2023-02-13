@@ -3,9 +3,240 @@ import BaseLayout from "../../layout/baseLayout.astro";
 ---
 
 <BaseLayout title="User Profiles">
-  <div
-    class="min-h-screen flex-col flex justify-center items-center py-12 bg-gradient-to-br from-emerald-300 to-purple-300 shadow-lg shadow-slate-800/50 text-black"
-  >
-    gaga
+  <div class="min-h-screen flex-col flex justify-center items-center py-32 shadow-lg text-black relative bg-white">
+    <div class="w-full h-[60vh] md:h-[35vh] bg-gradient-to-tr from-purple-500 to-rose-300 absolute top-0 left-0 z-0">
+    </div>
+    <div class="w-full h-[2vh] bg-slate-200 top-[60vh] md:top-[35vh] left-0 z-0 absolute"></div>
+
+    <!-- main panel -->
+    <div class="max-w-[90%] md:max-w-[70%] flex flex-row flex-wrap gap-12 justify-center items-center z-10">
+      <div
+        class="rounded-md shadow-lg min-w-[260px] shadow-slate-700/50 hover:shadow-orange-800/40 pt-10 bg-white flex flex-col justify-center items-center relative"
+      >
+        <!-- setting icons -->
+        <div class="text-gray-500 absolute top-4 right-4 hover:text-black hover:scale-110 cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.3"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+            ></path>
+          </svg>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=2000&q=60"
+          alt="person"
+          class="w-24 h-24 rounded-full shadow-lg shadow-slate-400 mx-10 hover:shadow-orange-300 cursor-pointer"
+        />
+        <h1 class="text-slate-800 font-semibold mt-3 px-10 pb-7">Jay Reese</h1>
+        <div class="w-full bg-slate-200 text-black flex flex-row justify-between items-center px-10 py-6 text-sm">
+          <div class="text-center">
+            <h3 class="font-medium">2</h3>
+            <h4 class="font-normal text-slate-700">Projects</h4>
+          </div>
+          <div class="text-center">
+            <h3 class="font-medium">6</h3>
+            <h4 class="font-normal text-slate-700">Prototypes</h4>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="rounded-md shadow-lg min-w-[260px] shadow-slate-700/50 hover:shadow-orange-800/40 pt-10 bg-white flex flex-col justify-center items-center relative"
+      >
+        <!-- setting icons -->
+        <div class="text-gray-500 absolute top-4 right-4 hover:text-black hover:scale-110 cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.3"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+            ></path>
+          </svg>
+        </div>
+        <img
+          src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=2000&q=60"
+          alt="person"
+          class="w-24 h-24 rounded-full shadow-lg shadow-slate-400 mx-10 hover:shadow-orange-300 cursor-pointer"
+        />
+        <h1 class="text-slate-800 font-semibold mt-3 px-10 pb-7">Carlost Ramos</h1>
+        <div class="w-full bg-slate-200 text-black flex flex-row justify-between items-center px-10 py-6 text-sm">
+          <div class="text-center">
+            <h3 class="font-medium">5</h3>
+            <h4 class="font-normal text-slate-700">Projects</h4>
+          </div>
+          <div class="text-center">
+            <h3 class="font-medium">2</h3>
+            <h4 class="font-normal text-slate-700">Prototypes</h4>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="rounded-md shadow-lg min-w-[260px] shadow-slate-700/50 hover:shadow-orange-800/40 pt-10 bg-white flex flex-col justify-center items-center relative"
+      >
+        <!-- setting icons -->
+        <div class="text-gray-500 absolute top-4 right-4 hover:text-black hover:scale-110 cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.3"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+            ></path>
+          </svg>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=2000&q=60"
+          alt="person"
+          class="w-24 h-24 rounded-full shadow-lg shadow-slate-400 mx-10 object-cover hover:shadow-orange-300 cursor-pointer"
+        />
+        <h1 class="text-slate-800 font-semibold mt-3 px-10 pb-7">Eugiene Ramot</h1>
+        <div class="w-full bg-slate-200 text-black flex flex-row justify-between items-center px-10 py-6 text-sm">
+          <div class="text-center">
+            <h3 class="font-medium">4</h3>
+            <h4 class="font-normal text-slate-700">Projects</h4>
+          </div>
+          <div class="text-center">
+            <h3 class="font-medium">23</h3>
+            <h4 class="font-normal text-slate-700">Prototypes</h4>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="rounded-md shadow-lg min-w-[260px] shadow-slate-700/50 hover:shadow-orange-800/40 pt-10 bg-white flex flex-col justify-center items-center relative"
+      >
+        <!-- setting icons -->
+        <div class="text-gray-500 absolute top-4 right-4 hover:text-black hover:scale-110 cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.3"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+            ></path>
+          </svg>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=2000&q=60"
+          alt="person"
+          class="w-24 h-24 rounded-full shadow-lg shadow-slate-400 mx-10 object-cover hover:shadow-orange-300 cursor-pointer"
+        />
+        <h1 class="text-slate-800 font-semibold mt-3 px-10 pb-7">Lie marshal</h1>
+        <div class="w-full bg-slate-200 text-black flex flex-row justify-between items-center px-10 py-6 text-sm">
+          <div class="text-center">
+            <h3 class="font-medium">6</h3>
+            <h4 class="font-normal text-slate-700">Projects</h4>
+          </div>
+          <div class="text-center">
+            <h3 class="font-medium">24</h3>
+            <h4 class="font-normal text-slate-700">Prototypes</h4>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="rounded-md shadow-lg min-w-[260px] shadow-slate-700/50 hover:shadow-orange-800/40 pt-10 bg-white flex flex-col justify-center items-center relative"
+      >
+        <!-- setting icons -->
+        <div class="text-gray-500 absolute top-4 right-4 hover:text-black hover:scale-110 cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.3"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+            ></path>
+          </svg>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60"
+          alt="person"
+          class="w-24 h-24 rounded-full shadow-lg shadow-slate-400 mx-10 object-cover hover:shadow-orange-300 cursor-pointer"
+        />
+        <h1 class="text-slate-800 font-semibold mt-3 px-10 pb-7">Olivia Campbel</h1>
+        <div class="w-full bg-slate-200 text-black flex flex-row justify-between items-center px-10 py-6 text-sm">
+          <div class="text-center">
+            <h3 class="font-medium">2</h3>
+            <h4 class="font-normal text-slate-700">Projects</h4>
+          </div>
+          <div class="text-center">
+            <h3 class="font-medium">15</h3>
+            <h4 class="font-normal text-slate-700">Prototypes</h4>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="rounded-md shadow-lg min-w-[260px] shadow-slate-700/50 hover:shadow-orange-800/40 pt-10 bg-white flex flex-col justify-center items-center relative"
+      >
+        <!-- setting icons -->
+        <div class="text-gray-500 absolute top-4 right-4 hover:text-black hover:scale-110 cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.3"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+            ></path>
+          </svg>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60"
+          alt="person"
+          class="w-24 h-24 rounded-full shadow-lg shadow-slate-400 mx-10 object-cover hover:shadow-orange-300 cursor-pointer"
+        />
+        <h1 class="text-slate-800 font-semibold mt-3 px-10 pb-7">Bernice Alvardo</h1>
+        <div class="w-full bg-slate-200 text-black flex flex-row justify-between items-center px-10 py-6 text-sm">
+          <div class="text-center">
+            <h3 class="font-medium">12</h3>
+            <h4 class="font-normal text-slate-700">Projects</h4>
+          </div>
+          <div class="text-center">
+            <h3 class="font-medium">4</h3>
+            <h4 class="font-normal text-slate-700">Prototypes</h4>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </BaseLayout>
