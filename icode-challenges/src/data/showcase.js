@@ -89,4 +89,12 @@ export const showcaseData = [
     description: "Container serction having user details and popup modal for more informations",
     posterImage: "https://www.icodethis.com/images/projects/user_card.png",
   },
+  {
+    title: "User Profiles",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/user_profiles.astro",
+    pageHref: "/solutions/user_profiles",
+    description: "section having different people profiles with quick description on their works",
+    posterImage: "https://www.icodethis.com/images/projects/user_profiles.png",
+  },
 ];
