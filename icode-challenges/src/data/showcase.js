@@ -97,4 +97,12 @@ export const showcaseData = [
     description: "section having different people profiles with quick description on their works",
     posterImage: "https://www.icodethis.com/images/projects/user_profiles.png",
   },
+  {
+    title: "Video Player",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/video_player.astro",
+    pageHref: "/solutions/video_player",
+    description: "Video player widget which has all controls for the videos",
+    posterImage: "https://www.icodethis.com/images/projects/video_player.jpg",
+  },
 ];
