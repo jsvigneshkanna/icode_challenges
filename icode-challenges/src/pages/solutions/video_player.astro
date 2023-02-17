@@ -4,8 +4,65 @@ import BaseLayout from "../../layout/baseLayout.astro";
 
 <BaseLayout title="Video Player">
   <div
-    class="min-h-screen flex-col flex justify-center items-center py-12 bg-gradient-to-br from-orange-200 to-blue-200 shadow-lg shadow-slate-800/50 text-black"
+    class="min-h-screen flex-col flex justify-center items-center py-12 bg-gradient-to-tr from-slate-700 to-slate-900 shadow-lg shadow-slate-800/50 text-black"
   >
-    agaggag
+    <!-- video widget -->
+    <div class="w-[90%] md:w-[80%] rounded-md shadow-lg shadow-red-700/20 relative h-[520px]">
+      <img
+        src="https://s3.ap-southeast-1.amazonaws.com/images.asianage.com/images/aa-Cover-5n0dt140tu9dcf6u5rhhu11hg4-20170801141429.Medi.jpeg"
+        alt="video poster"
+        class="w-full h-full object-full"
+      />
+
+      <!-- video title -->
+      <h1 class="text-white bg-transparent absolute top-6 left-6 font-semibold text-lg z-10">
+        Why this kolavaeri di lyrics - <span
+          class="text-slate-500 text-base font-medium p-2 hover:bg-slate-200 hover:text-slate-700 rounded-2xl"
+          >Dhansuh HD 2023</span
+        >
+      </h1>
+
+      <!-- video share option -->
+      <div class="flex flex-row gap-5 justify-center items-center top-6 right-6 absolute text-slate-300 z-10">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="rgb(203 213 225)"
+          class="w-6 h-6 cursor-pointer hover:scale-105 hover:text-blue-500"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
+            clip-rule="evenodd"></path>
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="w-6 h-6 cursor-pointer hover:scale-105 hover:text-blue-500"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </div>
+
+      <!-- progress bar -->
+      <div
+        class="absolute bottom-0 left-0 w-[calc(100%-16px)] mx-2 mb-2 rounded-sm bg-slate-600/20 z-10 h-12 flex flex-row justify-between items-center"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6 ml-6">
+          <path
+            fill-rule="evenodd"
+            d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
+            clip-rule="evenodd"></path>
+        </svg>
+        <div class="relative w-[70%]">
+          <div class=""></div>
+        </div>
+      </div>
+    </div>
   </div>
 </BaseLayout>
