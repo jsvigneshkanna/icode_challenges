@@ -105,4 +105,12 @@ export const showcaseData = [
     description: "Video player widget which has all controls for the videos",
     posterImage: "https://www.icodethis.com/images/projects/video_player.jpg",
   },
+  {
+    title: "Kanban Board",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/kanban_board.astro.astro",
+    pageHref: "/solutions/kanban_board.astro",
+    description: "Widget to hold the progress of projects in kanban style",
+    posterImage: "https://www.icodethis.com/images/projects/kanban.png",
+  },
 ];
