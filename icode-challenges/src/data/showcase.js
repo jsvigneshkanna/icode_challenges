@@ -108,8 +108,8 @@ export const showcaseData = [
   {
     title: "Kanban Board",
     github:
-      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/kanban_board.astro.astro",
-    pageHref: "/solutions/kanban_board.astro",
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/kanban_board.astro",
+    pageHref: "/solutions/kanban_board",
     description: "Widget to hold the progress of projects in kanban style",
     posterImage: "https://www.icodethis.com/images/projects/kanban.png",
   },
