@@ -2,10 +2,141 @@
 import BaseLayout from "../../layout/baseLayout.astro";
 ---
 
-<BaseLayout title="Kanban Board">
+<BaseLayout title="Project Card">
   <div
-    class="min-h-screen flex-col flex justify-center items-center py-6 bg-gradient-to-r from-yellow-100 to-orange-100 text-black"
+    class="min-h-screen flex-col flex justify-center items-center py-10 bg-gradient-to-br from-slate-900 to-blue-900 text-white"
   >
-    faffa
+    <!-- Main container -->
+    <div
+      class="w-[320px] md:w-[420px] bg-slate-900/60 shadow-xl shadow-slate-900/60 rounded-2xl border-t-2 border-t-rose-700 px-3 py-5 hover:bg-slate-900/20"
+      "
+    >
+      <!-- title section -->
+      <div class="flex flex-row justify-between items-center">
+        <div class="w-[85%]">
+          <h1 class="text-slate-100 font-semibold tracking-normal md:tracking-wide text-lg md:text-xl">
+            Taciti eros morbi sapien sit nec ac
+          </h1>
+          <h4 class="text-sm text-slate-300/75 mt-1">Created on 11.02.2016</h4>
+        </div>
+
+        <!-- setting icons -->
+        <div
+          class="w-[24px] h-[24px] rounded-full outline outline-2 outline-slate-900 flex justify-center items-center hover:scale-110 cursor-pointer hover:bg-blue-900"
+          data-ripple-light="true"
+          data-tooltip-target="setting-tooltip"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.2"
+            stroke="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          data-tooltip="setting-tooltip"
+          data-tooltip-mount="opacity-100 scale-100"
+          data-tooltip-unmount="opacity-0 scale-0 pointer-events-none"
+          data-tooltip-transition="transition-all duration-300 origin-bottom"
+          class="absolute z-50 whitespace-normal break-words rounded-lg bg-slate-900/80 py-1.5 px-3 font-sans text-sm font-normal text-white focus:outline-none"
+        >
+          Show settings
+        </div>
+      </div>
+
+      <!-- project description -->
+      <p class="text-slate-200/90 mt-5 text-sm md:text-[15px]">
+        Vitae nisl velit donec egestas mi, dolar cras dolor nex sodales quis at, lacinia non egestas lectus praesent
+        quam ar, magnis posuere libero.
+      </p>
+
+      <!-- task progress bar -->
+      <div class="flex justify-between items-center flex-row mt-10 w-full gap-5">
+        <p class="text-slate-200 text-lg font-medium w-[10%]">Tasks</p>
+        <div class="w-[80%] relative bg-blue-900 h-2 rounded-full overflow-hidden">
+          <div
+            class="absolute top-0 left-0 bg-emerald-500 w-[43%] h-2 rounded-full hover:bg-emerald-300 cursor-pointer"
+          >
+          </div>
+        </div>
+        <p class="w-[10%] text-slate-200 text-lg font-medium">43%</p>
+      </div>
+
+      <!-- user photos -->
+      <div class="flex flex-row justify-start items-center gap-3 mt-12">
+        <img
+          src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="afa"
+          class="w-10 h-10 rounded-full outline outline-4 outline-slate-800 hover:scale-105 hover:outline-blue-800 cursor-pointer"
+          data-ripple-light="true"
+          data-tooltip-target="kuns-tooltip"
+        />
+        <div
+          data-tooltip="kuns-tooltip"
+          data-tooltip-mount="opacity-100 scale-100"
+          data-tooltip-unmount="opacity-0 scale-0 pointer-events-none"
+          data-tooltip-transition="transition-all duration-300 origin-bottom"
+          class="absolute z-50 whitespace-normal break-words rounded-lg bg-slate-900/80 py-1.5 px-3 font-sans text-sm font-normal text-white focus:outline-none"
+        >
+          kuns
+        </div>
+        <img
+          src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="afa"
+          class="w-10 h-10 rounded-full outline outline-4 outline-slate-800 hover:scale-105 hover:outline-blue-800 cursor-pointer"
+          data-ripple-light="true"
+          data-tooltip-target="egambaram-tooltip"
+        />
+        <div
+          data-tooltip="egambaram-tooltip"
+          data-tooltip-mount="opacity-100 scale-100"
+          data-tooltip-unmount="opacity-0 scale-0 pointer-events-none"
+          data-tooltip-transition="transition-all duration-300 origin-bottom"
+          class="absolute z-50 whitespace-normal break-words rounded-lg bg-slate-900/80 py-1.5 px-3 font-sans text-sm font-normal text-white focus:outline-none"
+        >
+          Egambaram
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="afa"
+          class="w-10 h-10 rounded-full outline outline-4 outline-slate-800 hover:scale-105 hover:outline-blue-800 cursor-pointer"
+          data-ripple-light="true"
+          data-tooltip-target="pullikesi-tooltip"
+        />
+        <div
+          data-tooltip="pullikesi-tooltip"
+          data-tooltip-mount="opacity-100 scale-100"
+          data-tooltip-unmount="opacity-0 scale-0 pointer-events-none"
+          data-tooltip-transition="transition-all duration-300 origin-bottom"
+          class="absolute z-50 whitespace-normal break-words rounded-lg bg-slate-900/80 py-1.5 px-3 font-sans text-sm font-normal text-white focus:outline-none"
+        >
+          Pullikesi
+        </div>
+        <img
+          src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="afa"
+          class="w-10 h-10 rounded-full outline outline-4 outline-slate-800 hover:scale-105 hover:outline-blue-800 cursor-pointer"
+          data-ripple-light="true"
+          data-tooltip-target="vandu-tooltip"
+        />
+        <div
+          data-tooltip="vandu-tooltip"
+          data-tooltip-mount="opacity-100 scale-100"
+          data-tooltip-unmount="opacity-0 scale-0 pointer-events-none"
+          data-tooltip-transition="transition-all duration-300 origin-bottom"
+          class="absolute z-50 whitespace-normal break-words rounded-lg bg-slate-900/80 py-1.5 px-3 font-sans text-sm font-normal text-white focus:outline-none"
+        >
+          Vandu Murugan
+        </div>
+      </div>
+    </div>
   </div>
 </BaseLayout>
