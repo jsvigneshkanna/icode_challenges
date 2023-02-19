@@ -113,4 +113,12 @@ export const showcaseData = [
     description: "Widget to hold the progress of projects in kanban style",
     posterImage: "https://www.icodethis.com/images/projects/kanban.png",
   },
+  {
+    title: "Project Card",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/project_card.astro",
+    pageHref: "/solutions/project_card",
+    description: "Container that display the progress of the project and its sub details",
+    posterImage: "https://www.icodethis.com/images/projects/project_card.jpg",
+  },
 ];
