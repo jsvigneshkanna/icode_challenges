@@ -129,4 +129,12 @@ export const showcaseData = [
     description: "Page that displays the pricing of different category",
     posterImage: "https://www.icodethis.com/images/projects/pricing_table_2.png",
   },
+  {
+    title: "Incident History",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/incident_history.astro",
+    pageHref: "/solutions/incident_history",
+    description: "Page that displays the history progress of incidents",
+    posterImage: "https://www.icodethis.com/images/projects/incident_history.png",
+  },
 ];
