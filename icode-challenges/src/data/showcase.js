@@ -137,4 +137,12 @@ export const showcaseData = [
     description: "Page that displays the history progress of incidents",
     posterImage: "https://www.icodethis.com/images/projects/incident_history.png",
   },
+  {
+    title: "User Select",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/user_select.astro",
+    pageHref: "/solutions/user_select",
+    description: "Page where user can select different account and manage accounts",
+    posterImage: "https://www.icodethis.com/images/projects/user_select.png",
+  },
 ];
