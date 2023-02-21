@@ -2,10 +2,59 @@
 import BaseLayout from "../../layout/baseLayout.astro";
 ---
 
-<BaseLayout title="users card">
+<BaseLayout title="User Select">
   <div
-    class="min-h-screen flex-col flex justify-center items-center py-12 bg-gradient-to-br from-orange-200 to-blue-200 shadow-lg shadow-slate-800/50 text-black"
+    class="min-h-screen flex-col flex justify-center items-center py-32 bg-gradient-to-br from-blue-900 to-slate-900 text-white"
   >
-    gagqqe
+    <!-- main container -->
+    <div
+      class="w-[320px] md:w-[620px] rounded-md shadow-xl shadow-slate-800/50 bg-slate-900 p-2 py-10 md:p-4 md:py-12 flex flex-col justify-center items-center"
+    >
+      <h1 class="text-base md:text-lg font-medium md:font-semibold text-slate-200">Who is playing now?</h1>
+
+      <!-- account containers -->
+      <div class="w-[80%] flex flex-row items-center justify-center md:justify-start gap-6 mt-6 md:mt-8 flex-wrap">
+        <!-- account card -->
+        <div
+          class="w-[100px] md:w-[140px] bg-slate-800 rounded-md shadow-md shadow-rose-900/20 flex flex-col justify-center items-center px-6 py-5 hover:-translate-y-2 hover:shadow-rose-600/60 cursor-pointer h-44 active:outline-dashed active:outline-sky-500"
+        >
+          <img src="https://cdn-icons-png.flaticon.com/512/3153/3153346.png" alt="tika" class="w-20 md:w-24" />
+          <h3 class="font-medium mt-4">tika-m</h3>
+        </div>
+
+        <div
+          class="w-[100px] md:w-[140px] bg-slate-800 rounded-md shadow-md shadow-rose-900/20 flex flex-col justify-center items-center px-6 py-5 hover:-translate-y-2 hover:shadow-rose-600/60 cursor-pointer h-44 active:outline-dashed active:outline-sky-500"
+        >
+          <img src="https://cdn-icons-png.flaticon.com/512/1026/1026625.png" alt="tika" class="w-20 md:w-24" />
+          <h3 class="font-medium mt-4">Garlic</h3>
+        </div>
+
+        <div
+          class="w-[100px] md:w-[140px] bg-slate-800 rounded-md shadow-md shadow-rose-900/20 flex flex-col justify-center items-center px-6 py-5 hover:-translate-y-2 hover:shadow-rose-600/60 cursor-pointer h-44 text-sky-600 hover:bg-sky-800 hover:text-slate-100 active:outline-dashed active:outline-sky-500"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.6"
+            stroke="currentColor"
+            class="w-12 h-12"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+
+          <h3 class="font-medium mt-4 text-xs md:text-base">Add User</h3>
+        </div>
+
+        <!-- manage user button -->
+        <div class="flex justify-center items-center w-full mt-8">
+          <button
+            class="px-6 py-[6px] outline outline-1 outline-sky-800 rounded-full text-sky-600 font-semibold md:font-bold hover:bg-sky-800 hover:text-slate-200"
+            >Manage Users</button
+          >
+        </div>
+      </div>
+    </div>
   </div>
 </BaseLayout>
