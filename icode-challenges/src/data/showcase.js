@@ -145,4 +145,12 @@ export const showcaseData = [
     description: "Page where user can select different account and manage accounts",
     posterImage: "https://www.icodethis.com/images/projects/user_select.png",
   },
+  {
+    title: "Account Popup",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/account_popup.astro",
+    pageHref: "/solutions/account_popup",
+    description: "Popup modal when click over a user's image that displays complete imformation about selected user",
+    posterImage: "https://www.icodethis.com/images/projects/account_popup.png",
+  },
 ];
