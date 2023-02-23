@@ -33,6 +33,16 @@ const TITLE = Astro.props.title;
       });
       // end of Individual user card JS Part
     </script>
+    <script is:inline>
+      //  account popup JS starts
+      const popupEle = document.getElementById("popup");
+      const userContainerEle = document.getElementById("user-container");
+
+      userContainerEle.addEventListener("click", () => {
+        popupEle.classList.toggle("hidden");
+      });
+      // account popup JS ends
+    </script>
     <script is:inline type="module" src="https://unpkg.com/@material-tailwind/html@latest/scripts/tooltip.js"></script>
   </body>
 </html>
