@@ -4,8 +4,131 @@ import BaseLayout from "../../layout/baseLayout.astro";
 
 <BaseLayout title="Analytic Chart">
   <div
-    class="min-h-screen flex-col flex justify-center items-center py-12 bg-gradient-to-tr from-slate-700 to-slate-900 shadow-lg shadow-slate-800/50 text-black"
+    class="min-h-screen flex-col flex justify-center items-center py-12 bg-gradient-to-tr from-slate-200 to-slate-300 text-black"
   >
-    ac
+    <h1 class="text-blue-600 font-medium mb-3">Only accessible in big screens</h1>
+    <!-- main container - chart -->
+    <div class="bg-white rounded-t-lg shadow-lg shadow-yellow-800/30 p-14 relative">
+      <!-- chart lines -->
+      <div class="flex flex-col justify-center items-start gap-20">
+        <div class="flex flex-row justify-center items-center gap-3">
+          <p class="text-sm font-medium tracking-wide text-slate-700">200,00</p>
+          <div class="border-t-2 border-dashed w-[420px]"></div>
+        </div>
+
+        <div class="flex flex-row justify-center items-center gap-3">
+          <p class="text-sm font-medium tracking-wide text-slate-700">150,00</p>
+          <div class="border-t-2 border-dashed w-[420px]"></div>
+        </div>
+
+        <div class="flex flex-row justify-center items-center gap-3">
+          <p class="text-sm font-medium tracking-wide text-slate-700">100,00</p>
+          <div class="border-t-2 border-dashed w-[420px]"></div>
+        </div>
+
+        <div class="flex flex-row justify-center items-center gap-3">
+          <p class="text-sm font-medium tracking-wide text-slate-700">50,00</p>
+          <div class="border-t-2 border-dashed w-[420px]"></div>
+        </div>
+
+        <div class="flex flex-row justify-center items-center gap-3">
+          <div class="border-t-2 ml-12 w-[420px]"></div>
+        </div>
+      </div>
+
+      <!-- bar lines -->
+      <div class="flex flex-row absolute bottom-6 z-20 left-36 gap-12 justify-center items-end">
+        <div class="duration-200 ease-in-out cursor-pointer">
+          <div class="w-2 hover:w-4 overflow-hidden rounded-t-full">
+            <div class="h-6 bg-red-500"></div>
+            <div class="h-12 bg-yellow-400"></div>
+            <div class="h-24 bg-emerald-400"></div>
+            <div class="h-40 bg-sky-500"></div>
+          </div>
+          <h1 class="mt-3 text-sm font-medium">Jul</h1>
+        </div>
+
+        <div class="duration-200 ease-in-out cursor-pointer">
+          <div class="w-2 hover:w-4 overflow-hidden rounded-t-full">
+            <div class="h-20 bg-red-500"></div>
+            <div class="h-2 bg-yellow-400"></div>
+            <div class="h-32 bg-emerald-400"></div>
+            <div class="h-20 bg-sky-500"></div>
+          </div>
+          <h1 class="mt-3 text-sm font-medium">Aug</h1>
+        </div>
+
+        <div class="duration-200 ease-in-out cursor-pointer">
+          <div class="w-2 hover:w-4 overflow-hidden rounded-t-full">
+            <div class="h-10 bg-red-500"></div>
+            <div class="h-12 bg-yellow-400"></div>
+            <div class="h-24 bg-emerald-400"></div>
+            <div class="h-52 bg-sky-500"></div>
+          </div>
+          <h1 class="mt-3 text-sm font-medium">Sep</h1>
+        </div>
+
+        <div class="duration-200 ease-in-out cursor-pointer">
+          <div class="w-2 hover:w-4 overflow-hidden rounded-t-full">
+            <div class="h-2 bg-red-500"></div>
+            <div class="h-4 bg-yellow-400"></div>
+            <div class="h-4 bg-emerald-400"></div>
+            <div class="h-28 bg-sky-500"></div>
+          </div>
+          <h1 class="mt-3 text-sm font-medium">Sep</h1>
+        </div>
+
+        <div class="duration-200 ease-in-out cursor-pointer">
+          <div class="w-2 hover:w-4 overflow-hidden rounded-t-full">
+            <div class="h-1 bg-red-500"></div>
+            <div class="h-20 bg-yellow-400"></div>
+            <div class="h-10 bg-emerald-400"></div>
+            <div class="h-40 bg-sky-500"></div>
+          </div>
+          <h1 class="mt-3 text-sm font-medium">Nov</h1>
+        </div>
+
+        <div class="duration-200 ease-in-out cursor-pointer">
+          <div class="w-2 hover:w-4 overflow-hidden rounded-t-full">
+            <div class="h-4 bg-red-500"></div>
+            <div class="h-4 bg-yellow-400"></div>
+            <div class="h-10 bg-emerald-400"></div>
+            <div class="h-60 bg-sky-500"></div>
+          </div>
+          <h1 class="mt-3 text-sm font-medium">Dec</h1>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-white rounded-b-lg py-6 px-36 flex flex-row justify-center items-center gap-5 shadow-lg shadow-blue-700/20"
+    >
+      <div
+        class="flex flex-row justify-center items-center text-xs font-medium text-slate-700 gap-2 hover:scale-105 cursor-pointer"
+      >
+        <div class="w-2 h-2 bg-sky-500 rounded-sm"></div>
+        <h1 class="uppercase">india</h1>
+      </div>
+
+      <div
+        class="flex flex-row justify-center items-center text-xs font-medium text-slate-700 gap-2 hover:scale-105 cursor-pointer"
+      >
+        <div class="w-2 h-2 bg-emerald-400 rounded-sm"></div>
+        <h1 class="uppercase">canade</h1>
+      </div>
+
+      <div
+        class="flex flex-row justify-center items-center text-xs font-medium text-slate-700 gap-2 hover:scale-105 cursor-pointer"
+      >
+        <div class="w-2 h-2 bg-yellow-400 rounded-sm"></div>
+        <h1 class="uppercase">australia</h1>
+      </div>
+
+      <div
+        class="flex flex-row justify-center items-center text-xs font-medium text-slate-700 gap-2 hover:scale-105 cursor-pointer"
+      >
+        <div class="w-2 h-2 bg-red-500 rounded-sm"></div>
+        <h1 class="uppercase">China</h1>
+      </div>
+    </div>
   </div>
 </BaseLayout>
