@@ -153,4 +153,12 @@ export const showcaseData = [
     description: "Popup modal when click over a user's image that displays complete imformation about selected user",
     posterImage: "https://www.icodethis.com/images/projects/account_popup.png",
   },
+  {
+    title: "Analytic Chart",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/analytic_chart.astro",
+    pageHref: "/solutions/analytic_chart",
+    description: "Chart that displays the graph representating some analytics",
+    posterImage: "https://www.icodethis.com/images/projects/analytics_chart.png",
+  },
 ];
