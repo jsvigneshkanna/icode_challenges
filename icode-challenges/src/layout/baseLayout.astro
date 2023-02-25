@@ -43,6 +43,37 @@ const TITLE = Astro.props.title;
       });
       // account popup JS ends
     </script>
+
+    <script is:inline>
+      // start of countdown JS
+      var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
+      const monthsEle = document.getElementById("months");
+      const daysEle = document.getElementById("days");
+      const hoursEle = document.getElementById("hours");
+      const minutesEle = document.getElementById("minutes");
+      const secondsEle = document.getElementById("seconds");
+      var x = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30));
+        var days = 30 % Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        monthsEle.innerHTML = months;
+        daysEle.innerHTML = days;
+        hoursEle.innerHTML = hours;
+        minutesEle.innerHTML = minutes;
+        secondsEle.innerHTML = seconds;
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+      // end of countdown JS
+    </script>
     <script is:inline type="module" src="https://unpkg.com/@material-tailwind/html@latest/scripts/tooltip.js"></script>
   </body>
 </html>

@@ -4,8 +4,39 @@ import BaseLayout from "../../layout/baseLayout.astro";
 
 <BaseLayout title="Analytic Chart">
   <div
-    class="min-h-screen flex-col flex justify-center items-center py-12 bg-gradient-to-tr from-slate-200 to-slate-300 text-black"
+    class="min-h-screen flex-col flex justify-center items-center py-12 bg-gradient-to-tr from-sky-200 to-indigo-200 text-black"
   >
-    countdown
+    <!-- timer widget -->
+    <div
+      class="w-[320px] md:w-[720px] h-[560px] md:h-[520px] bg-hero bg-no-repeat bg-cover bg-center rounded-lg hover:-translate-y-2 delay-300 duration-200 transition-all ease-in-out shadow-2xl flex flex-col justify-start items-center pt-12 md:pt-24 shadow-fuchsia-900/60 bg-[url(https://images.unsplash.com/photo-1512389098783-66b81f86e199?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNocmlzdG1hc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60)] md:bg-[url(https://images.unsplash.com/photo-1576919228236-a097c32a5cd4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2hyaXN0bWFzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)]"
+    >
+      <h2
+        class="text-xl md:text-3xl font-bold text-black md:text-fuchsia-700 tracking-tight md:tracking-normal hover:scale-105 hover:shadow-red-900/20 rounded-full p-1 hover:shadow-lg delay-200 duration-200 cursor-pointer transition-all ease-in-out"
+      >
+        Until rows of gifts from Santa 🎁
+      </h2>
+      <div class="flex flex-row justify-center items-center gap-8 md:gap-12 mt-10 md:mt-14">
+        <div class="text-center">
+          <p class="text-2xl md:text-4xl font-extrabold text-slate-800" id="months">2</p>
+          <p class="text-sm md:text-base font-medium text-slate-700">months</p>
+        </div>
+        <div class="text-center">
+          <p class="text-2xl md:text-4xl font-extrabold text-slate-800" id="days">3</p>
+          <p class="text-sm md:text-base font-medium text-slate-700">days</p>
+        </div>
+        <div class="text-center">
+          <p class="text-2xl md:text-4xl font-extrabold text-slate-800" id="hours">9</p>
+          <p class="text-sm md:text-base font-medium text-slate-700">hours</p>
+        </div>
+        <div class="text-center">
+          <p class="text-2xl md:text-4xl font-extrabold text-slate-800" id="minutes">58</p>
+          <p class="text-sm md:text-base font-medium text-slate-700">minutes</p>
+        </div>
+        <div class="text-center hidden md:block">
+          <p class="text-2xl md:text-4xl font-extrabold text-slate-800" id="seconds">16</p>
+          <p class="text-sm md:text-base font-medium text-slate-700">seconds</p>
+        </div>
+      </div>
+    </div>
   </div>
 </BaseLayout>
