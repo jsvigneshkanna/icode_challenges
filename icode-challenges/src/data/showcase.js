@@ -161,4 +161,12 @@ export const showcaseData = [
     description: "Chart that displays the graph representating some analytics",
     posterImage: "https://www.icodethis.com/images/projects/analytics_chart.png",
   },
+  {
+    title: "Countdown",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/countdown.astro",
+    pageHref: "/solutions/countdown",
+    description: "Count down timer to specific event like christmas",
+    posterImage: "https://www.icodethis.com/images/projects/countdown.png",
+  },
 ];
