@@ -169,4 +169,12 @@ export const showcaseData = [
     description: "Count down timer to specific event like christmas",
     posterImage: "https://www.icodethis.com/images/projects/countdown.png",
   },
+  {
+    title: "Verify Code",
+    github:
+      "https://github.com/jsvigneshkanna/icode_challenges/blob/master/icode-challenges/src/pages/solutions/verify_code.astro",
+    pageHref: "/solutions/verify_code",
+    description: "OTP verifcation panel ",
+    posterImage: "https://www.icodethis.com/images/projects/verify_code.png",
+  },
 ];
