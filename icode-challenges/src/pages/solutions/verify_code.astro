@@ -4,8 +4,81 @@ import BaseLayout from "../../layout/baseLayout.astro";
 
 <BaseLayout title="Verify Code">
   <div
-    class="min-h-screen flex-col flex justify-center items-center py-12 bg-gradient-to-br from-orange-200 to-blue-200 shadow-lg shadow-slate-800/50 text-black"
+    class="min-h-screen flex-col lg:flex-row flex justify-center items-center py-32 lg:py-16 bg-gradient-to-br gap-8 from-indigo-100 to-fuchsia-100 text-black"
   >
-    verfiy
+    <!-- OTP input container -->
+    <div
+      class="w-[320px] md:w-[640px] bg-white border-4 border-slate-600 flex flex-col justify-center items-center px-12 py-8 rounded-lg shadow-lg shadow-fuchsia-800/20 gap-7"
+    >
+      <h4 class="text-slate-900 font-bold text-lg lg:text-2xl">Verify your email address</h4>
+      <div class="text-sm lg:text-base text-slate-800 font-thin text-center">
+        <p>
+          We emailed you a six-digit code to <span class="text-blue-600 font-normal hover:underline cursor-pointer"
+            >icode@mail.com</span
+          >
+        </p>
+        <p>Enter the code below to confirm your email address</p>
+      </div>
+      <!-- OTP input -->
+      <div class="flex flex-row justify-center item-center w-full gap-3 lg:gap-4 mb-12 text-2xl lg:text-5xl font-mono">
+        <input
+          type="text"
+          pattern="[0-9]+"
+          placeholder="0"
+          maxlength="1"
+          class="invalid:border-red-500 invalid:border-2 invalid:rotate-3 placeholder:font-sans shadow-md shadow-indigo-600/20 invalid:animate-pulse py-4 px-2 focus:outline-2 focus:outline-indigo-700 w-[52px] border-[1px] border-slate-400 text-center rounded-lg"
+        />
+        <input
+          type="text"
+          pattern="[0-9]+"
+          placeholder="0"
+          maxlength="1"
+          class="invalid:border-red-500 invalid:border-2 invalid:rotate-3 placeholder:font-sans invalid:animate-pulse shadow-md shadow-indigo-600/20 py-4 px-2 focus:outline-2 focus:outline-indigo-700 w-[52px] border-[1px] border-slate-400 text-center rounded-lg"
+        />
+        <input
+          type="text"
+          pattern="[0-9]+"
+          placeholder="0"
+          maxlength="1"
+          class="invalid:border-red-500 invalid:border-2 invalid:rotate-3 placeholder:font-sans invalid:animate-pulse shadow-md shadow-indigo-600/20 py-4 px-2 focus:outline-2 focus:outline-indigo-700 w-[52px] border-[1px] border-slate-400 text-center rounded-lg"
+        />
+        <input
+          type="text"
+          pattern="[0-9]+"
+          placeholder="0"
+          maxlength="1"
+          class="invalid:border-red-500 invalid:border-2 invalid:rotate-3 placeholder:font-sans invalid:animate-pulse shadow-md shadow-indigo-600/20 py-4 px-2 focus:outline-2 focus:outline-indigo-700 w-[52px] border-[1px] border-slate-400 text-center rounded-lg"
+        />
+      </div>
+      <p class="text-xs lg:text-sm rounded-lg py-2 px-4 bg-indigo-100 text-slate-700 text-center">
+        Make sure to keep this window open while we check your OTP in backend
+      </p>
+    </div>
+
+    <!-- OTP input container -->
+    <div
+      class="w-[320px] md:w-[640px] bg-white border-4 border-fuchsia-400 flex flex-col justify-center items-center px-12 py-8 rounded-lg shadow-lg shadow-fuchsia-800/20 gap-7"
+    >
+      <h4 class="text-slate-900 font-bold text-lg lg:text-2xl">Verify your email address</h4>
+      <div class="text-sm lg:text-base text-slate-800 font-thin text-center">
+        <p>To verify your email address, enter this code in</p>
+        <p>your browser</p>
+      </div>
+      <!-- OTP email -->
+      <div
+        class="bg-indigo-100 py-4 text-2xl lg:text-5xl font-mono flex flex-row justify-center gap-5 lg:gap-8 mb-1 items-center px-6 rounded-lg shadow-fuchsia-800/20 cursor-pointer hover:scale-105 hover:shadow-lg hover:shadow-indigo-900/30"
+      >
+        <p>2</p>
+        <p>8</p>
+        <p>4</p>
+        <p>4</p>
+      </div>
+      <p class="text-xs lg:text-sm text-slate-700 w-[60%] text-center">
+        If you did't request a code, you can safely ignore this emal.
+      </p>
+      <p class="text-xs lg:text-sm text-slate-700">
+        Questions? <span class="text-blue-600 cursor-pointer hover:underline">We're here to help</span>
+      </p>
+    </div>
   </div>
 </BaseLayout>
